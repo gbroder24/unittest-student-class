@@ -15,5 +15,10 @@ class Teststudent(unittest.TestCase):
         self.assertTrue(student.naughty_list)
 
 
+    def test_email(self):
+        student = Student("John", "Doe")
+        self.assertEqual(student.email, "john.doe@email.com")
+
+
 if __name__ == "__main__":
     unittest.main()
